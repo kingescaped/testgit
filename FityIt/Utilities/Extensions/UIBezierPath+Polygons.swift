@@ -1,0 +1,43 @@
+//
+//  UIBezierPath+Polygons.swift
+//  Fitylt
+//
+//  Created by Lionel Vinh Quang on 07/07/2021.
+//
+//  Based on: https://github.com/ZevEisenberg/ZEPolygon, thanks man!
+
+import UIKit
+
+extension UIBezierPath {
+    convenience init(triangleIn size: CGSize) {
+        self.init()
+        
+        let width = size.width
+        let height = size.height
+        let halfWitdth = width/2
+        let halfHeight = height/2
+        
+        move(to: CGPoint(x: -halfWitdth, y: halfHeight))
+        addLine(to: CGPoint(x: halfWitdth, y: halfHeight))
+        addLine(to: CGPoint(x: 0, y: -halfHeight))
+        close()
+    }
+    
+    convenience init(pentagonWith width: CGFloat) {
+        self.init()
+        
+        let sidesCount: Int = 5
+        let sides = CGFloat(sidesCount)
+        
+        let lenght = width * sqrt((sides - sqrt(sides)) / 10)
+        
+        for i in 0..<sidesCount {
+            let angle: CGFloat = CGFloat(i) * ((2 * .pi) / sides) - (.pi / 2)
+            let point = CGPoint(x: lenght * cos(angle), y: -lenght * sin(angle) + 2 * ((width / 2) - lenght))
+            
+            if i == 0 { move(to: point) }
+            else { addLine(to: point) }
+        }
+        close()
+    }
+}

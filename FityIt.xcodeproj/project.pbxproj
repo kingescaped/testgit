@@ -1,0 +1,922 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3325AF002059DE40008E1174 /* SKAction+AppearDisappear.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3325AEFF2059DE40008E1174 /* SKAction+AppearDisappear.swift */; };
+		3325AF1D205B02E6008E1174 /* ShareImageScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3325AF1B205B02E6008E1174 /* ShareImageScene.swift */; };
+		3325AF1F205B0393008E1174 /* UIView+AsImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3325AF1E205B0393008E1174 /* UIView+AsImage.swift */; };
+		3325AF23205B078E008E1174 /* LPRFixedWidthLabelNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 3325AF21205B078E008E1174 /* LPRFixedWidthLabelNode.m */; };
+		3325AF26205B09C2008E1174 /* GameScoreHUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3325AF25205B09C2008E1174 /* GameScoreHUD.swift */; };
+		3325AF28205B0B6B008E1174 /* GameGesturesHUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3325AF27205B0B6B008E1174 /* GameGesturesHUD.swift */; };
+		3325AF2B205B0C99008E1174 /* SpinnerPart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3325AF2A205B0C99008E1174 /* SpinnerPart.swift */; };
+		3325AF2D205B1407008E1174 /* Spinner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3325AF2C205B1407008E1174 /* Spinner.swift */; };
+		3325AF31205C0D10008E1174 /* Double+Relative.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3325AF2F205C0D0F008E1174 /* Double+Relative.swift */; };
+		3325AF33205C16D2008E1174 /* SKSpriteNode+SetTexture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3325AF32205C16D2008E1174 /* SKSpriteNode+SetTexture.swift */; };
+		3325AF35205C192F008E1174 /* SKAction+TextureGlitchs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3325AF34205C192F008E1174 /* SKAction+TextureGlitchs.swift */; };
+		3325AF37205C6CB3008E1174 /* CGPoint+IsCloseTo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3325AF36205C6CB3008E1174 /* CGPoint+IsCloseTo.swift */; };
+		33AD4FC020B304C50034A9BA /* TWSpriteKitUtils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 33AD4FBD20B304A40034A9BA /* TWSpriteKitUtils.framework */; };
+		33AD4FC120B304C50034A9BA /* TWSpriteKitUtils.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 33AD4FBD20B304A40034A9BA /* TWSpriteKitUtils.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		33B8A33720B2FCC000BDE204 /* SKColor+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33B8A32B20B2FCC000BDE204 /* SKColor+Extensions.swift */; };
+		33B8A33820B2FCC000BDE204 /* CGVector+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33B8A32C20B2FCC000BDE204 /* CGVector+Extensions.swift */; };
+		33B8A33920B2FCC000BDE204 /* Int+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33B8A32D20B2FCC000BDE204 /* Int+Extensions.swift */; };
+		33B8A33A20B2FCC000BDE204 /* SKTTimingFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33B8A32E20B2FCC000BDE204 /* SKTTimingFunctions.swift */; };
+		33B8A33B20B2FCC000BDE204 /* SKAction+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33B8A32F20B2FCC000BDE204 /* SKAction+Extensions.swift */; };
+		33B8A33C20B2FCC000BDE204 /* SKAction+SpecialEffects.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33B8A33020B2FCC000BDE204 /* SKAction+SpecialEffects.swift */; };
+		33B8A33D20B2FCC000BDE204 /* SKNode+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33B8A33120B2FCC000BDE204 /* SKNode+Extensions.swift */; };
+		33B8A33E20B2FCC000BDE204 /* CGPoint+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33B8A33220B2FCC000BDE204 /* CGPoint+Extensions.swift */; };
+		33B8A33F20B2FCC000BDE204 /* SKTEffects.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33B8A33320B2FCC000BDE204 /* SKTEffects.swift */; };
+		33B8A34020B2FCC000BDE204 /* SKTAudio.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33B8A33420B2FCC000BDE204 /* SKTAudio.swift */; };
+		33B8A34120B2FCC000BDE204 /* Vector3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33B8A33520B2FCC000BDE204 /* Vector3.swift */; };
+		33B8A34220B2FCC000BDE204 /* CGFloat+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33B8A33620B2FCC000BDE204 /* CGFloat+Extensions.swift */; };
+		33B8A34520B3027600BDE204 /* Numbers+Random.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33B8A34420B3027600BDE204 /* Numbers+Random.swift */; };
+		33BC56F1205DD5430022728D /* FityIt_Screenshots.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33BC56F0205DD5430022728D /* FityIt_Screenshots.swift */; };
+		33BC56FA205DD5AA0022728D /* SnapshotHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33BC56F9205DD5AA0022728D /* SnapshotHelper.swift */; };
+		33ECD9342058527500B6AE8E /* VAGRoundedStd-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 33ECD92A2058527500B6AE8E /* VAGRoundedStd-Bold.otf */; };
+		33ECD9352058527500B6AE8E /* VAGRoundedStd-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = 33ECD92B2058527500B6AE8E /* VAGRoundedStd-Black.otf */; };
+		33ECD9362058527500B6AE8E /* VAGRoundedStd-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 33ECD92C2058527500B6AE8E /* VAGRoundedStd-Light.otf */; };
+		33ECD94B2058542000B6AE8E /* shape_failure.wav in Resources */ = {isa = PBXBuildFile; fileRef = 33ECD9452058542000B6AE8E /* shape_failure.wav */; };
+		33ECD94C2058542000B6AE8E /* shape_success.wav in Resources */ = {isa = PBXBuildFile; fileRef = 33ECD9462058542000B6AE8E /* shape_success.wav */; };
+		33ECD94D2058542000B6AE8E /* shape_special.wav in Resources */ = {isa = PBXBuildFile; fileRef = 33ECD9472058542000B6AE8E /* shape_special.wav */; };
+		33ECD94E2058542000B6AE8E /* button_down.wav in Resources */ = {isa = PBXBuildFile; fileRef = 33ECD9482058542000B6AE8E /* button_down.wav */; };
+		33ECD94F2058542000B6AE8E /* button_up.wav in Resources */ = {isa = PBXBuildFile; fileRef = 33ECD9492058542000B6AE8E /* button_up.wav */; };
+		33ECD9502058542000B6AE8E /* spinner_turn.wav in Resources */ = {isa = PBXBuildFile; fileRef = 33ECD94A2058542000B6AE8E /* spinner_turn.wav */; };
+		33ECD95C2058546100B6AE8E /* ShapeType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33ECD9532058546000B6AE8E /* ShapeType.swift */; };
+		33ECD9622058546100B6AE8E /* Shape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33ECD9592058546000B6AE8E /* Shape.swift */; };
+		33ECD96920585CF200B6AE8E /* AppBuildMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33ECD96720585CF200B6AE8E /* AppBuildMode.swift */; };
+		33ECD96A20585CF200B6AE8E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33ECD96820585CF200B6AE8E /* AppDelegate.swift */; };
+		33ECD96C20585E6B00B6AE8E /* PhysicsCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33ECD96B20585E6B00B6AE8E /* PhysicsCategory.swift */; };
+		33ECD97220597E0100B6AE8E /* AppColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33ECD97120597E0000B6AE8E /* AppColors.swift */; };
+		33ECD97420597F1E00B6AE8E /* ShapeType+Properties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33ECD97320597F1E00B6AE8E /* ShapeType+Properties.swift */; };
+		33ECD97620597FAB00B6AE8E /* ShapeType+Paths.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33ECD97520597FAB00B6AE8E /* ShapeType+Paths.swift */; };
+		33ECD9832059834800B6AE8E /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 33ECD9852059834800B6AE8E /* Localizable.strings */; };
+		33ECD989205983E600B6AE8E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 33ECD988205983E600B6AE8E /* LaunchScreen.storyboard */; };
+		33ECD98B205986C300B6AE8E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 33ECD98A205986C300B6AE8E /* Images.xcassets */; };
+		33ECD98F205993B600B6AE8E /* UIBezierPath+Polygons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33ECD98E205993B600B6AE8E /* UIBezierPath+Polygons.swift */; };
+		33ECD9932059974900B6AE8E /* SplashScreenViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 33ECD9912059974900B6AE8E /* SplashScreenViewController.xib */; };
+		33ECD9942059974900B6AE8E /* SplashScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33ECD9922059974900B6AE8E /* SplashScreenViewController.swift */; };
+		33ECD996205997DC00B6AE8E /* Delay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33ECD995205997DC00B6AE8E /* Delay.swift */; };
+		33ECD99820599B9400B6AE8E /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33ECD99720599B9400B6AE8E /* GameViewController.swift */; };
+		33ECD99A2059A33A00B6AE8E /* AppCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33ECD9992059A33A00B6AE8E /* AppCache.swift */; };
+		33ECD99C2059B0D900B6AE8E /* SKTexture+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33ECD99B2059B0D900B6AE8E /* SKTexture+Extensions.swift */; };
+		33ECD99E2059B10500B6AE8E /* UIImage+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33ECD99D2059B10500B6AE8E /* UIImage+Extensions.swift */; };
+		33ECD9A02059BB7100B6AE8E /* AppDefines.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33ECD99F2059BB7100B6AE8E /* AppDefines.swift */; };
+		33ECD9A32059BF5500B6AE8E /* InitialScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33ECD9A22059BF5400B6AE8E /* InitialScene.swift */; };
+		33ECD9A52059BFCD00B6AE8E /* AppPersistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33ECD9A42059BFCD00B6AE8E /* AppPersistence.swift */; };
+		33ECD9A92059C42500B6AE8E /* GCHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33ECD9A82059C42500B6AE8E /* GCHelper.swift */; };
+		33ECD9AB2059C51F00B6AE8E /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33ECD9AA2059C51E00B6AE8E /* GameScene.swift */; };
+		33ECD9AD2059C5E500B6AE8E /* Score.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33ECD9AC2059C5E500B6AE8E /* Score.swift */; };
+		33ECD9B02059C90A00B6AE8E /* UpdateTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33ECD9AF2059C90900B6AE8E /* UpdateTimer.swift */; };
+		33ECD9B22059CB4800B6AE8E /* SKAction+SoundEffects.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33ECD9B12059CB4800B6AE8E /* SKAction+SoundEffects.swift */; };
+		33ECD9B72059D36B00B6AE8E /* ScoreContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33ECD9B62059D36B00B6AE8E /* ScoreContainer.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		33AD4FBC20B304A40034A9BA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 33AD4FB720B304A40034A9BA /* TWSpriteKitUtils.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = E9099AC81B9F589500758069;
+			remoteInfo = TWSpriteKitUtils;
+		};
+		33AD4FBE20B304A40034A9BA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 33AD4FB720B304A40034A9BA /* TWSpriteKitUtils.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = E9306C731BAAEF15003A900C;
+			remoteInfo = "TWSpriteKitUtils Demo";
+		};
+		33AD4FC220B304C50034A9BA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 33AD4FB720B304A40034A9BA /* TWSpriteKitUtils.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = E9099AC71B9F589500758069;
+			remoteInfo = TWSpriteKitUtils;
+		};
+		33BC56F3205DD5430022728D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 33ECD8CD20584B3300B6AE8E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 33ECD8D420584B3300B6AE8E;
+			remoteInfo = FityIt;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		3325AEE52059DB2E008E1174 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				33AD4FC120B304C50034A9BA /* TWSpriteKitUtils.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		3325AEFF2059DE40008E1174 /* SKAction+AppearDisappear.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SKAction+AppearDisappear.swift"; sourceTree = "<group>"; };
+		3325AF1B205B02E6008E1174 /* ShareImageScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShareImageScene.swift; sourceTree = "<group>"; };
+		3325AF1E205B0393008E1174 /* UIView+AsImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+AsImage.swift"; sourceTree = "<group>"; };
+		3325AF20205B078C008E1174 /* FityIt-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FityIt-Bridging-Header.h"; sourceTree = "<group>"; };
+		3325AF21205B078E008E1174 /* LPRFixedWidthLabelNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LPRFixedWidthLabelNode.m; sourceTree = "<group>"; };
+		3325AF22205B078E008E1174 /* LPRFixedWidthLabelNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LPRFixedWidthLabelNode.h; sourceTree = "<group>"; };
+		3325AF25205B09C2008E1174 /* GameScoreHUD.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameScoreHUD.swift; sourceTree = "<group>"; };
+		3325AF27205B0B6B008E1174 /* GameGesturesHUD.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameGesturesHUD.swift; sourceTree = "<group>"; };
+		3325AF2A205B0C99008E1174 /* SpinnerPart.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpinnerPart.swift; sourceTree = "<group>"; };
+		3325AF2C205B1407008E1174 /* Spinner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Spinner.swift; sourceTree = "<group>"; };
+		3325AF2F205C0D0F008E1174 /* Double+Relative.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Double+Relative.swift"; sourceTree = "<group>"; };
+		3325AF32205C16D2008E1174 /* SKSpriteNode+SetTexture.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SKSpriteNode+SetTexture.swift"; sourceTree = "<group>"; };
+		3325AF34205C192F008E1174 /* SKAction+TextureGlitchs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SKAction+TextureGlitchs.swift"; sourceTree = "<group>"; };
+		3325AF36205C6CB3008E1174 /* CGPoint+IsCloseTo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGPoint+IsCloseTo.swift"; sourceTree = "<group>"; };
+		33AD4FB720B304A40034A9BA /* TWSpriteKitUtils.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = TWSpriteKitUtils.xcodeproj; path = submodules/TWSpriteKitUtils/TWSpriteKitUtils.xcodeproj; sourceTree = SOURCE_ROOT; };
+		33B8A32B20B2FCC000BDE204 /* SKColor+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SKColor+Extensions.swift"; sourceTree = "<group>"; };
+		33B8A32C20B2FCC000BDE204 /* CGVector+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGVector+Extensions.swift"; sourceTree = "<group>"; };
+		33B8A32D20B2FCC000BDE204 /* Int+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Int+Extensions.swift"; sourceTree = "<group>"; };
+		33B8A32E20B2FCC000BDE204 /* SKTTimingFunctions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SKTTimingFunctions.swift; sourceTree = "<group>"; };
+		33B8A32F20B2FCC000BDE204 /* SKAction+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SKAction+Extensions.swift"; sourceTree = "<group>"; };
+		33B8A33020B2FCC000BDE204 /* SKAction+SpecialEffects.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SKAction+SpecialEffects.swift"; sourceTree = "<group>"; };
+		33B8A33120B2FCC000BDE204 /* SKNode+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SKNode+Extensions.swift"; sourceTree = "<group>"; };
+		33B8A33220B2FCC000BDE204 /* CGPoint+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGPoint+Extensions.swift"; sourceTree = "<group>"; };
+		33B8A33320B2FCC000BDE204 /* SKTEffects.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SKTEffects.swift; sourceTree = "<group>"; };
+		33B8A33420B2FCC000BDE204 /* SKTAudio.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SKTAudio.swift; sourceTree = "<group>"; };
+		33B8A33520B2FCC000BDE204 /* Vector3.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Vector3.swift; sourceTree = "<group>"; };
+		33B8A33620B2FCC000BDE204 /* CGFloat+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGFloat+Extensions.swift"; sourceTree = "<group>"; };
+		33B8A34420B3027600BDE204 /* Numbers+Random.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Numbers+Random.swift"; sourceTree = "<group>"; };
+		33BC56EE205DD5430022728D /* FityIt-Screenshots.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "FityIt-Screenshots.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		33BC56F0205DD5430022728D /* FityIt_Screenshots.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FityIt_Screenshots.swift; sourceTree = "<group>"; };
+		33BC56F2205DD5430022728D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		33BC56F9205DD5AA0022728D /* SnapshotHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnapshotHelper.swift; sourceTree = "<group>"; };
+		33ECD8D520584B3300B6AE8E /* FityIt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FityIt.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		33ECD8EA20584B3500B6AE8E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		33ECD92A2058527500B6AE8E /* VAGRoundedStd-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "VAGRoundedStd-Bold.otf"; sourceTree = "<group>"; };
+		33ECD92B2058527500B6AE8E /* VAGRoundedStd-Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "VAGRoundedStd-Black.otf"; sourceTree = "<group>"; };
+		33ECD92C2058527500B6AE8E /* VAGRoundedStd-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "VAGRoundedStd-Light.otf"; sourceTree = "<group>"; };
+		33ECD9452058542000B6AE8E /* shape_failure.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = shape_failure.wav; sourceTree = "<group>"; };
+		33ECD9462058542000B6AE8E /* shape_success.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = shape_success.wav; sourceTree = "<group>"; };
+		33ECD9472058542000B6AE8E /* shape_special.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = shape_special.wav; sourceTree = "<group>"; };
+		33ECD9482058542000B6AE8E /* button_down.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = button_down.wav; sourceTree = "<group>"; };
+		33ECD9492058542000B6AE8E /* button_up.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = button_up.wav; sourceTree = "<group>"; };
+		33ECD94A2058542000B6AE8E /* spinner_turn.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = spinner_turn.wav; sourceTree = "<group>"; };
+		33ECD9532058546000B6AE8E /* ShapeType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShapeType.swift; sourceTree = "<group>"; };
+		33ECD9592058546000B6AE8E /* Shape.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Shape.swift; sourceTree = "<group>"; };
+		33ECD96720585CF200B6AE8E /* AppBuildMode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppBuildMode.swift; sourceTree = "<group>"; };
+		33ECD96820585CF200B6AE8E /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		33ECD96B20585E6B00B6AE8E /* PhysicsCategory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhysicsCategory.swift; sourceTree = "<group>"; };
+		33ECD97120597E0000B6AE8E /* AppColors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppColors.swift; sourceTree = "<group>"; };
+		33ECD97320597F1E00B6AE8E /* ShapeType+Properties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ShapeType+Properties.swift"; sourceTree = "<group>"; };
+		33ECD97520597FAB00B6AE8E /* ShapeType+Paths.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ShapeType+Paths.swift"; sourceTree = "<group>"; };
+		33ECD9842059834800B6AE8E /* en */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		33ECD988205983E600B6AE8E /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		33ECD98A205986C300B6AE8E /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		33ECD98E205993B600B6AE8E /* UIBezierPath+Polygons.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIBezierPath+Polygons.swift"; sourceTree = "<group>"; };
+		33ECD9912059974900B6AE8E /* SplashScreenViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SplashScreenViewController.xib; sourceTree = "<group>"; };
+		33ECD9922059974900B6AE8E /* SplashScreenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplashScreenViewController.swift; sourceTree = "<group>"; };
+		33ECD995205997DC00B6AE8E /* Delay.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Delay.swift; sourceTree = "<group>"; };
+		33ECD99720599B9400B6AE8E /* GameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		33ECD9992059A33A00B6AE8E /* AppCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCache.swift; sourceTree = "<group>"; };
+		33ECD99B2059B0D900B6AE8E /* SKTexture+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SKTexture+Extensions.swift"; sourceTree = "<group>"; };
+		33ECD99D2059B10500B6AE8E /* UIImage+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Extensions.swift"; sourceTree = "<group>"; };
+		33ECD99F2059BB7100B6AE8E /* AppDefines.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDefines.swift; sourceTree = "<group>"; };
+		33ECD9A22059BF5400B6AE8E /* InitialScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InitialScene.swift; sourceTree = "<group>"; };
+		33ECD9A42059BFCD00B6AE8E /* AppPersistence.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppPersistence.swift; sourceTree = "<group>"; };
+		33ECD9A82059C42500B6AE8E /* GCHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GCHelper.swift; sourceTree = "<group>"; };
+		33ECD9AA2059C51E00B6AE8E /* GameScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
+		33ECD9AC2059C5E500B6AE8E /* Score.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Score.swift; sourceTree = "<group>"; };
+		33ECD9AF2059C90900B6AE8E /* UpdateTimer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UpdateTimer.swift; sourceTree = "<group>"; };
+		33ECD9B12059CB4800B6AE8E /* SKAction+SoundEffects.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SKAction+SoundEffects.swift"; sourceTree = "<group>"; };
+		33ECD9B62059D36B00B6AE8E /* ScoreContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScoreContainer.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		33BC56EB205DD5430022728D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		33ECD8D220584B3300B6AE8E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				33AD4FC020B304C50034A9BA /* TWSpriteKitUtils.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3325AF24205B079C008E1174 /* LPRFixedWidthLabelNode */ = {
+			isa = PBXGroup;
+			children = (
+				3325AF22205B078E008E1174 /* LPRFixedWidthLabelNode.h */,
+				3325AF21205B078E008E1174 /* LPRFixedWidthLabelNode.m */,
+			);
+			path = LPRFixedWidthLabelNode;
+			sourceTree = "<group>";
+		};
+		3325AF29205B0C83008E1174 /* Spinner */ = {
+			isa = PBXGroup;
+			children = (
+				3325AF2C205B1407008E1174 /* Spinner.swift */,
+				3325AF2A205B0C99008E1174 /* SpinnerPart.swift */,
+			);
+			path = Spinner;
+			sourceTree = "<group>";
+		};
+		33AD4FB820B304A40034A9BA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				33AD4FBD20B304A40034A9BA /* TWSpriteKitUtils.framework */,
+				33AD4FBF20B304A40034A9BA /* TWSpriteKitUtils Demo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		33B8A32A20B2FCC000BDE204 /* SKTUtils */ = {
+			isa = PBXGroup;
+			children = (
+				33B8A32B20B2FCC000BDE204 /* SKColor+Extensions.swift */,
+				33B8A32C20B2FCC000BDE204 /* CGVector+Extensions.swift */,
+				33B8A32D20B2FCC000BDE204 /* Int+Extensions.swift */,
+				33B8A32E20B2FCC000BDE204 /* SKTTimingFunctions.swift */,
+				33B8A32F20B2FCC000BDE204 /* SKAction+Extensions.swift */,
+				33B8A33020B2FCC000BDE204 /* SKAction+SpecialEffects.swift */,
+				33B8A33120B2FCC000BDE204 /* SKNode+Extensions.swift */,
+				33B8A33220B2FCC000BDE204 /* CGPoint+Extensions.swift */,
+				33B8A33320B2FCC000BDE204 /* SKTEffects.swift */,
+				33B8A33420B2FCC000BDE204 /* SKTAudio.swift */,
+				33B8A33520B2FCC000BDE204 /* Vector3.swift */,
+				33B8A33620B2FCC000BDE204 /* CGFloat+Extensions.swift */,
+			);
+			path = SKTUtils;
+			sourceTree = "<group>";
+		};
+		33BC56EF205DD5430022728D /* FityIt-Screenshots */ = {
+			isa = PBXGroup;
+			children = (
+				33BC56F0205DD5430022728D /* FityIt_Screenshots.swift */,
+				33BC56F9205DD5AA0022728D /* SnapshotHelper.swift */,
+				33BC56F2205DD5430022728D /* Info.plist */,
+			);
+			path = "FityIt-Screenshots";
+			sourceTree = "<group>";
+		};
+		33ECD8CC20584B3300B6AE8E = {
+			isa = PBXGroup;
+			children = (
+				33ECD8D720584B3300B6AE8E /* FityIt */,
+				33BC56EF205DD5430022728D /* FityIt-Screenshots */,
+				33ECD8D620584B3300B6AE8E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		33ECD8D620584B3300B6AE8E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				33ECD8D520584B3300B6AE8E /* FityIt.app */,
+				33BC56EE205DD5430022728D /* FityIt-Screenshots.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		33ECD8D720584B3300B6AE8E /* FityIt */ = {
+			isa = PBXGroup;
+			children = (
+				33ECD9902059972F00B6AE8E /* Controllers */,
+				33ECD96F205869CB00B6AE8E /* Utilities */,
+				33ECD96620585CD100B6AE8E /* Main */,
+				33ECD9512058546000B6AE8E /* Game Objects */,
+				33ECD9A12059BF3F00B6AE8E /* Scenes */,
+				33ECD8EA20584B3500B6AE8E /* Info.plist */,
+				33ECD9202058527500B6AE8E /* Resources */,
+				33ECD9A62059C3A800B6AE8E /* Supporting Files */,
+			);
+			path = FityIt;
+			sourceTree = "<group>";
+		};
+		33ECD9202058527500B6AE8E /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				33ECD98A205986C300B6AE8E /* Images.xcassets */,
+				33ECD988205983E600B6AE8E /* LaunchScreen.storyboard */,
+				33ECD9852059834800B6AE8E /* Localizable.strings */,
+				33ECD9442058541F00B6AE8E /* Sounds */,
+				33ECD9292058527500B6AE8E /* Fonts */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		33ECD9292058527500B6AE8E /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				33ECD92A2058527500B6AE8E /* VAGRoundedStd-Bold.otf */,
+				33ECD92B2058527500B6AE8E /* VAGRoundedStd-Black.otf */,
+				33ECD92C2058527500B6AE8E /* VAGRoundedStd-Light.otf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		33ECD9442058541F00B6AE8E /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				33ECD9452058542000B6AE8E /* shape_failure.wav */,
+				33ECD9462058542000B6AE8E /* shape_success.wav */,
+				33ECD9472058542000B6AE8E /* shape_special.wav */,
+				33ECD9482058542000B6AE8E /* button_down.wav */,
+				33ECD9492058542000B6AE8E /* button_up.wav */,
+				33ECD94A2058542000B6AE8E /* spinner_turn.wav */,
+			);
+			path = Sounds;
+			sourceTree = "<group>";
+		};
+		33ECD9512058546000B6AE8E /* Game Objects */ = {
+			isa = PBXGroup;
+			children = (
+				3325AF29205B0C83008E1174 /* Spinner */,
+				33ECD96B20585E6B00B6AE8E /* PhysicsCategory.swift */,
+				33ECD9B52059D36000B6AE8E /* Others */,
+				33ECD9AC2059C5E500B6AE8E /* Score.swift */,
+				33ECD9522058546000B6AE8E /* Shapes */,
+			);
+			path = "Game Objects";
+			sourceTree = "<group>";
+		};
+		33ECD9522058546000B6AE8E /* Shapes */ = {
+			isa = PBXGroup;
+			children = (
+				33ECD9532058546000B6AE8E /* ShapeType.swift */,
+				33ECD9592058546000B6AE8E /* Shape.swift */,
+				33ECD97320597F1E00B6AE8E /* ShapeType+Properties.swift */,
+				33ECD97520597FAB00B6AE8E /* ShapeType+Paths.swift */,
+			);
+			path = Shapes;
+			sourceTree = "<group>";
+		};
+		33ECD96620585CD100B6AE8E /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				33ECD96720585CF200B6AE8E /* AppBuildMode.swift */,
+				33ECD96820585CF200B6AE8E /* AppDelegate.swift */,
+				33ECD97120597E0000B6AE8E /* AppColors.swift */,
+				33ECD9992059A33A00B6AE8E /* AppCache.swift */,
+				33ECD99F2059BB7100B6AE8E /* AppDefines.swift */,
+				33ECD9A42059BFCD00B6AE8E /* AppPersistence.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		33ECD96F205869CB00B6AE8E /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				33ECD995205997DC00B6AE8E /* Delay.swift */,
+				33ECD970205869DA00B6AE8E /* Extensions */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		33ECD970205869DA00B6AE8E /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				33B8A34420B3027600BDE204 /* Numbers+Random.swift */,
+				3325AF2F205C0D0F008E1174 /* Double+Relative.swift */,
+				3325AF36205C6CB3008E1174 /* CGPoint+IsCloseTo.swift */,
+				33ECD98E205993B600B6AE8E /* UIBezierPath+Polygons.swift */,
+				33ECD99B2059B0D900B6AE8E /* SKTexture+Extensions.swift */,
+				33ECD99D2059B10500B6AE8E /* UIImage+Extensions.swift */,
+				33ECD9B12059CB4800B6AE8E /* SKAction+SoundEffects.swift */,
+				3325AEFF2059DE40008E1174 /* SKAction+AppearDisappear.swift */,
+				3325AF1E205B0393008E1174 /* UIView+AsImage.swift */,
+				3325AF32205C16D2008E1174 /* SKSpriteNode+SetTexture.swift */,
+				3325AF34205C192F008E1174 /* SKAction+TextureGlitchs.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		33ECD9902059972F00B6AE8E /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				33ECD99720599B9400B6AE8E /* GameViewController.swift */,
+				33ECD9922059974900B6AE8E /* SplashScreenViewController.swift */,
+				33ECD9912059974900B6AE8E /* SplashScreenViewController.xib */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		33ECD9A12059BF3F00B6AE8E /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				33ECD9A22059BF5400B6AE8E /* InitialScene.swift */,
+				33ECD9AA2059C51E00B6AE8E /* GameScene.swift */,
+				3325AF1B205B02E6008E1174 /* ShareImageScene.swift */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		33ECD9A62059C3A800B6AE8E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				33AD4FB720B304A40034A9BA /* TWSpriteKitUtils.xcodeproj */,
+				33B8A32A20B2FCC000BDE204 /* SKTUtils */,
+				3325AF24205B079C008E1174 /* LPRFixedWidthLabelNode */,
+				33ECD9AE2059C90900B6AE8E /* UpdateTimer */,
+				33ECD9A72059C3DC00B6AE8E /* GCHelper */,
+				3325AF20205B078C008E1174 /* FityIt-Bridging-Header.h */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		33ECD9A72059C3DC00B6AE8E /* GCHelper */ = {
+			isa = PBXGroup;
+			children = (
+				33ECD9A82059C42500B6AE8E /* GCHelper.swift */,
+			);
+			path = GCHelper;
+			sourceTree = "<group>";
+		};
+		33ECD9AE2059C90900B6AE8E /* UpdateTimer */ = {
+			isa = PBXGroup;
+			children = (
+				33ECD9AF2059C90900B6AE8E /* UpdateTimer.swift */,
+			);
+			path = UpdateTimer;
+			sourceTree = "<group>";
+		};
+		33ECD9B52059D36000B6AE8E /* Others */ = {
+			isa = PBXGroup;
+			children = (
+				33ECD9B62059D36B00B6AE8E /* ScoreContainer.swift */,
+				3325AF25205B09C2008E1174 /* GameScoreHUD.swift */,
+				3325AF27205B0B6B008E1174 /* GameGesturesHUD.swift */,
+			);
+			path = Others;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		33BC56ED205DD5430022728D /* FityIt-Screenshots */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 33BC56F8205DD5430022728D /* Build configuration list for PBXNativeTarget "FityIt-Screenshots" */;
+			buildPhases = (
+				33BC56EA205DD5430022728D /* Sources */,
+				33BC56EB205DD5430022728D /* Frameworks */,
+				33BC56EC205DD5430022728D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				33BC56F4205DD5430022728D /* PBXTargetDependency */,
+			);
+			name = "FityIt-Screenshots";
+			productName = "FityIt-Screenshots";
+			productReference = 33BC56EE205DD5430022728D /* FityIt-Screenshots.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		33ECD8D420584B3300B6AE8E /* FityIt */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 33ECD8ED20584B3500B6AE8E /* Build configuration list for PBXNativeTarget "FityIt" */;
+			buildPhases = (
+				33ECD8D120584B3300B6AE8E /* Sources */,
+				33ECD8D220584B3300B6AE8E /* Frameworks */,
+				33ECD8D320584B3300B6AE8E /* Resources */,
+				3325AEE52059DB2E008E1174 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				33AD4FC320B304C50034A9BA /* PBXTargetDependency */,
+			);
+			name = FityIt;
+			productName = FityIt;
+			productReference = 33ECD8D520584B3300B6AE8E /* FityIt.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		33ECD8CD20584B3300B6AE8E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = "Txai Wieser";
+				TargetAttributes = {
+					33BC56ED205DD5430022728D = {
+						CreatedOnToolsVersion = 9.3;
+						LastSwiftMigration = 1000;
+						TestTargetID = 33ECD8D420584B3300B6AE8E;
+					};
+					33ECD8D420584B3300B6AE8E = {
+						CreatedOnToolsVersion = 9.3;
+						LastSwiftMigration = 1000;
+					};
+				};
+			};
+			buildConfigurationList = 33ECD8D020584B3300B6AE8E /* Build configuration list for PBXProject "FityIt" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				"pt-BR",
+				"pt-PT",
+			);
+			mainGroup = 33ECD8CC20584B3300B6AE8E;
+			productRefGroup = 33ECD8D620584B3300B6AE8E /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 33AD4FB820B304A40034A9BA /* Products */;
+					ProjectRef = 33AD4FB720B304A40034A9BA /* TWSpriteKitUtils.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				33ECD8D420584B3300B6AE8E /* FityIt */,
+				33BC56ED205DD5430022728D /* FityIt-Screenshots */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		33AD4FBD20B304A40034A9BA /* TWSpriteKitUtils.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = TWSpriteKitUtils.framework;
+			remoteRef = 33AD4FBC20B304A40034A9BA /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		33AD4FBF20B304A40034A9BA /* TWSpriteKitUtils Demo.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = "TWSpriteKitUtils Demo.app";
+			remoteRef = 33AD4FBE20B304A40034A9BA /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		33BC56EC205DD5430022728D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		33ECD8D320584B3300B6AE8E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				33ECD9362058527500B6AE8E /* VAGRoundedStd-Light.otf in Resources */,
+				33ECD9342058527500B6AE8E /* VAGRoundedStd-Bold.otf in Resources */,
+				33ECD9832059834800B6AE8E /* Localizable.strings in Resources */,
+				33ECD9352058527500B6AE8E /* VAGRoundedStd-Black.otf in Resources */,
+				33ECD94B2058542000B6AE8E /* shape_failure.wav in Resources */,
+				33ECD94C2058542000B6AE8E /* shape_success.wav in Resources */,
+				33ECD94E2058542000B6AE8E /* button_down.wav in Resources */,
+				33ECD9502058542000B6AE8E /* spinner_turn.wav in Resources */,
+				33ECD94F2058542000B6AE8E /* button_up.wav in Resources */,
+				33ECD98B205986C300B6AE8E /* Images.xcassets in Resources */,
+				33ECD989205983E600B6AE8E /* LaunchScreen.storyboard in Resources */,
+				33ECD94D2058542000B6AE8E /* shape_special.wav in Resources */,
+				33ECD9932059974900B6AE8E /* SplashScreenViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		33BC56EA205DD5430022728D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				33BC56F1205DD5430022728D /* FityIt_Screenshots.swift in Sources */,
+				33BC56FA205DD5AA0022728D /* SnapshotHelper.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		33ECD8D120584B3300B6AE8E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				33ECD97420597F1E00B6AE8E /* ShapeType+Properties.swift in Sources */,
+				33ECD96A20585CF200B6AE8E /* AppDelegate.swift in Sources */,
+				33B8A33D20B2FCC000BDE204 /* SKNode+Extensions.swift in Sources */,
+				33ECD99A2059A33A00B6AE8E /* AppCache.swift in Sources */,
+				33ECD9A32059BF5500B6AE8E /* InitialScene.swift in Sources */,
+				33B8A33C20B2FCC000BDE204 /* SKAction+SpecialEffects.swift in Sources */,
+				33B8A34220B2FCC000BDE204 /* CGFloat+Extensions.swift in Sources */,
+				3325AF37205C6CB3008E1174 /* CGPoint+IsCloseTo.swift in Sources */,
+				33ECD96C20585E6B00B6AE8E /* PhysicsCategory.swift in Sources */,
+				33ECD99C2059B0D900B6AE8E /* SKTexture+Extensions.swift in Sources */,
+				3325AF31205C0D10008E1174 /* Double+Relative.swift in Sources */,
+				33ECD99820599B9400B6AE8E /* GameViewController.swift in Sources */,
+				3325AF33205C16D2008E1174 /* SKSpriteNode+SetTexture.swift in Sources */,
+				3325AF26205B09C2008E1174 /* GameScoreHUD.swift in Sources */,
+				33ECD97220597E0100B6AE8E /* AppColors.swift in Sources */,
+				33ECD9942059974900B6AE8E /* SplashScreenViewController.swift in Sources */,
+				3325AF35205C192F008E1174 /* SKAction+TextureGlitchs.swift in Sources */,
+				33ECD9A52059BFCD00B6AE8E /* AppPersistence.swift in Sources */,
+				33B8A33A20B2FCC000BDE204 /* SKTTimingFunctions.swift in Sources */,
+				33B8A34520B3027600BDE204 /* Numbers+Random.swift in Sources */,
+				33ECD96920585CF200B6AE8E /* AppBuildMode.swift in Sources */,
+				33ECD9AB2059C51F00B6AE8E /* GameScene.swift in Sources */,
+				3325AF28205B0B6B008E1174 /* GameGesturesHUD.swift in Sources */,
+				33B8A33B20B2FCC000BDE204 /* SKAction+Extensions.swift in Sources */,
+				33ECD9622058546100B6AE8E /* Shape.swift in Sources */,
+				33B8A33820B2FCC000BDE204 /* CGVector+Extensions.swift in Sources */,
+				3325AF1D205B02E6008E1174 /* ShareImageScene.swift in Sources */,
+				3325AF002059DE40008E1174 /* SKAction+AppearDisappear.swift in Sources */,
+				33B8A34120B2FCC000BDE204 /* Vector3.swift in Sources */,
+				33B8A33F20B2FCC000BDE204 /* SKTEffects.swift in Sources */,
+				33ECD97620597FAB00B6AE8E /* ShapeType+Paths.swift in Sources */,
+				33ECD9B72059D36B00B6AE8E /* ScoreContainer.swift in Sources */,
+				33B8A33720B2FCC000BDE204 /* SKColor+Extensions.swift in Sources */,
+				3325AF2D205B1407008E1174 /* Spinner.swift in Sources */,
+				33ECD9B02059C90A00B6AE8E /* UpdateTimer.swift in Sources */,
+				3325AF23205B078E008E1174 /* LPRFixedWidthLabelNode.m in Sources */,
+				33B8A33E20B2FCC000BDE204 /* CGPoint+Extensions.swift in Sources */,
+				33ECD996205997DC00B6AE8E /* Delay.swift in Sources */,
+				33ECD9A92059C42500B6AE8E /* GCHelper.swift in Sources */,
+				33ECD9A02059BB7100B6AE8E /* AppDefines.swift in Sources */,
+				3325AF2B205B0C99008E1174 /* SpinnerPart.swift in Sources */,
+				33B8A33920B2FCC000BDE204 /* Int+Extensions.swift in Sources */,
+				33ECD98F205993B600B6AE8E /* UIBezierPath+Polygons.swift in Sources */,
+				33ECD95C2058546100B6AE8E /* ShapeType.swift in Sources */,
+				33ECD9AD2059C5E500B6AE8E /* Score.swift in Sources */,
+				33ECD9B22059CB4800B6AE8E /* SKAction+SoundEffects.swift in Sources */,
+				33B8A34020B2FCC000BDE204 /* SKTAudio.swift in Sources */,
+				3325AF1F205B0393008E1174 /* UIView+AsImage.swift in Sources */,
+				33ECD99E2059B10500B6AE8E /* UIImage+Extensions.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		33AD4FC320B304C50034A9BA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = TWSpriteKitUtils;
+			targetProxy = 33AD4FC220B304C50034A9BA /* PBXContainerItemProxy */;
+		};
+		33BC56F4205DD5430022728D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 33ECD8D420584B3300B6AE8E /* FityIt */;
+			targetProxy = 33BC56F3205DD5430022728D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		33ECD9852059834800B6AE8E /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				33ECD9842059834800B6AE8E /* en */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		33BC56F5205DD5430022728D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "FityIt-Screenshots/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				OTHER_SWIFT_FLAGS = "-D SNAPSHOT";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.txaiwieser.FityIt-Screenshots";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = FityIt;
+			};
+			name = Debug;
+		};
+		33BC56F6205DD5430022728D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "FityIt-Screenshots/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				OTHER_SWIFT_FLAGS = "-D SNAPSHOT";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.txaiwieser.FityIt-Screenshots";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = FityIt;
+			};
+			name = Release;
+		};
+		33ECD8EB20584B3500B6AE8E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		33ECD8EC20584B3500B6AE8E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		33ECD8EE20584B3500B6AE8E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = 99MCMQ6KGP;
+				INFOPLIST_FILE = FityIt/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.TDW.FityIt;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "FityIt/Supporting Files/FityIt-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		33ECD8EF20584B3500B6AE8E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = 99MCMQ6KGP;
+				INFOPLIST_FILE = FityIt/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.TDW.FityIt;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "FityIt/Supporting Files/FityIt-Bridging-Header.h";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		33BC56F8205DD5430022728D /* Build configuration list for PBXNativeTarget "FityIt-Screenshots" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				33BC56F5205DD5430022728D /* Debug */,
+				33BC56F6205DD5430022728D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		33ECD8D020584B3300B6AE8E /* Build configuration list for PBXProject "FityIt" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				33ECD8EB20584B3500B6AE8E /* Debug */,
+				33ECD8EC20584B3500B6AE8E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		33ECD8ED20584B3500B6AE8E /* Build configuration list for PBXNativeTarget "FityIt" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				33ECD8EE20584B3500B6AE8E /* Debug */,
+				33ECD8EF20584B3500B6AE8E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 33ECD8CD20584B3300B6AE8E /* Project object */;
+}

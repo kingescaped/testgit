@@ -1,0 +1,34 @@
+//
+//  Localizable.strings
+//  FityIt
+//
+//  Created by Lionel Vinh Quang on 07/07/2021.
+//
+
+"DOWNLOAD_BANNER"          = "download_banner_en";
+"SHARE_MESSAGE_COMPLETE"   = "Tôi vừa ghi được %d %@ điểm trong #FityIt. Điểm cao nhất của tôi là %d, bạn có thể vượt qua không??";
+"SHARE_MESSAGE_COMPLETE_POINTS" = "points";
+"SHARE_MESSAGE_COMPLETE_POINT"  = "point";
+"SHARE_MESSAGE_TOP"        = "Điểm cao nhất của tôi là %d! Bạn có thể vượt qua không??? #FityIt";
+
+"REMOVE_ADS"               = "Có Ads";
+
+"TUTORIAL_TAP" = "Tap";
+"MSG_READY" = "Ready?";
+
+
+"RATE_ALERT_TITLE"         = "Bạn có muốn giới thiệu nó cho mọi ngừi :v";
+
+"RATE_ALERT_MESSAGE"       = "Nhớ đánh giá 5 sao nhé <3 !!";
+
+"RATE_ALERT_YES"           = "Đánh giá";
+
+"RATE_ALERT_CANCEL"        = "Huỷ";
+
+
+
+"PANEL_HIGH_SCORE"         = "ĐIỂM CAO NHẤT";
+
+"PANEL_SCORE"              = "ĐIỂM";
+
+
